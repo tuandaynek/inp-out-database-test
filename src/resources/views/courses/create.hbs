@@ -1,0 +1,49 @@
+<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-50 to-purple-100">
+    <div class="w-full max-w-lg p-8 bg-white shadow-lg rounded-xl">
+        <h1 class="text-2xl font-extrabold text-gray-800 mb-6 text-center">🎓 Tạo mới khóa học</h1>
+
+        <form action="/courses/store" method="POST" class="space-y-6">
+            <!-- Tên khóa học -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Tên khóa học</label>
+                <input type="text" name="name" id="name" placeholder="Nhập tên khóa học"
+                    class="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-800 shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-200">
+            </div>
+
+            <!-- Mô tả -->
+            <div>
+                <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Mô tả khóa học</label>
+                <textarea name="description" id="description" rows="4" placeholder="Nhập mô tả khóa học"
+                    class="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-800 shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-200 resize-none"></textarea>
+            </div>
+
+            <!-- URL Thumbnail -->
+            <div>
+                <label for="thumbnailUrl" class="block text-sm font-medium text-gray-700 mb-1">URL ảnh thumbnail</label>
+                <input type="text" name="thumbnailUrl" id="thumbnailUrl" placeholder="Nhập URL ảnh thumbnail"
+                    class="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-800 shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-200">
+            </div>
+
+            <!-- Video ID -->
+            <div>
+                <label for="videoId" class="block text-sm font-medium text-gray-700 mb-1">YouTube Video ID</label>
+                <input type="text" name="videoId" id="videoId" placeholder="Nhập YouTube Video ID"
+                    class="w-full border border-gray-300 rounded-md py-2 px-3 text-gray-800 shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-200">
+            </div>
+
+            <!-- Nút Submit -->
+            <div class="flex justify-center">
+                <button type="submit"
+                    class="bg-purple-600 text-white font-medium py-2 px-5 rounded-md shadow hover:bg-purple-700 focus:ring-4 focus:ring-purple-300 focus:ring-offset-2 transition duration-300 transform hover:scale-105">
+                    🚀 Tải lên khóa học
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+</style>
