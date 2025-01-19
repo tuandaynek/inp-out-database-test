@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 async function connect(){
     try{
-        await mongoose.connect('mongodb://localhost:27017/tuan_learn', {
+        await mongoose.connect('mongodb+srv://TuanCodeNNLT:<db_password>@test-database.vcoy8.mongodb.net/?retryWrites=true&w=majority&appName=Test-Database', {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
